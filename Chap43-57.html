@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- CSS -->
+<style>
+#div1
+{
+    border: 30px solid aqua;
+    margin-right: 40%;
+    margin-left: 40%;
+    background: grey;
+}
+#a1
+{
+    margin: 0 0 0 30%;
+    font-size: 2.5em;
+}
+#div2 
+{
+    border: 30px solid rgb(21, 78, 78);
+    margin-right: 40%;
+    margin-left: 40%;
+    background: grey;
+}
+#div3 
+{
+    border: 30px solid rgb(83, 253, 105);
+    margin-right: 40%;
+    margin-left: 40%;
+    background: grey;
+}
+#div4 
+{
+    border: 30px solid rgb(87, 0, 250);
+    margin-right: 40%;
+    margin-left: 40%;
+    background: grey;
+}
+#div5
+{
+    border: 30px solid rgb(250, 36, 161);
+    margin-right: 40%;
+    margin-left: 40%;
+    background: grey;
+}
+#div6 
+{
+    border: 30px solid rgb(233, 78, 6);
+    margin-right: 40%;
+    margin-left: 40%;
+    background: grey;
+}
+#div7 
+{
+    border: 30px solid rgb(140, 241, 92);
+    margin-right: 40%;
+    margin-left: 40%;
+    background: grey;
+}
+#div8 
+{
+    border: 30px solid rgb(39, 12, 0);
+    margin-right: 40%;
+    margin-left: 40%;
+    background: rgb(219, 64, 64);
+}
+#div9 
+{
+    border: 30px solid rgb(39, 12, 0);
+    margin-right: 40%;
+    margin-left: 40%;
+    background: rgb(4, 163, 4);
+}
+#inp1 
+{
+    margin:  0 0 0 35%;
+    height: 40px;
+}
+#inp2 
+{
+    width: 80px;
+    text-align: center;
+    margin: 0 0 0 30%;
+}
+#inp3 
+{
+    width: 80px;
+    text-align: center;
+    margin: 0 0 0 30%;
+}
+#img1 
+{
+    width: 54px;
+    height: 50px;
+    margin-left: 74px;
+}
+#img2 
+{
+    width: 54px;
+    height: 50px;
+    margin-left: 74px;
+    margin-top: -9px;
+}
+#img3 
+{
+    width: 54px;
+    height: 50px;
+    margin-left: 74px;
+    margin-top: -9px;
+}
+
+#img4
+{
+    width: 54px;
+    height: 50px;
+    margin-left: 74px;
+   
+}
+#img5
+{
+    width: 54px;
+    height: 50px;
+    margin-left: 74px;
+   
+}
+#img6
+{
+    width: 54px;
+    height: 50px;
+    margin-left: 74px;
+   
+}
+#img7
+{
+    width: 54px;
+    height: 50px;
+    margin-left: 74px;
+   
+}
+</style>
+
+<!-- HTML AND JAVASCRIPT -->
+
+<!--CHAPTER 45 -->
+
+<div id="div1">
+<a href="#" onclick="alert('Chapter 45: Event Links')" id="a1" >Click</a>
+</div>
+
+<!-- CHAPTER 46 -->
+
+<div id="div2">
+<p>Click On Any Of Them</p>
+    <input type="button" onclick="alert('Chapter 46: Event Buttons')" id="inp1" value="CLICK"><br>
+    <a href="JavaScript:void(0)" onclick="alert('Chpter 46: Event Buttons')"><img src="../../CLASS WORK/video.jpg" alt="" id="img1"></a>
+    <img src="../../CLASS WORK/Wolve.jpg" alt="" id="img2" onclick="alert('Chpter 46: Event Buttons')">
+    <!-- Using Function -->
+    <img src="../../CLASS WORK/Wolve2.jpg" alt="" id="img2" onclick="greetUser()" id="img3">
+<script>
+    function greetUser()
+    {
+        alert("Chpter 46: Event Buttons");
+    }
+</script>
+
+</div>
+
+<!-- CHAPTER 47  -->
+
+<div id="div3">
+        <center><P>MOUSEOVER</P></center>
+<img src="../../CLASS WORK/unique.jpg" alt="" id="img4" onmouseover="src='../../CLASS WORK/wolve3.jpg'" onmouseout="src='../../CLASS WORK/unique.jpg'">
+<p onmouseover="this.style.color='lightgreen'" onmouseout="this.style.color='Black'">Mouseover on this LINE to Change Color</p><br>
+
+</div>
+
+<!-- CHAPTER 48 -->
+
+<div id="div4">
+
+        <p onmouseover="expand()" >Slow Loris: MOUSEOVER for more Info</p>
+        <script>
+        function expand()
+        {
+        
+        }
+        </script>
+
+<input type="text"  id="inp2" onfocus="this.style.backgroundColor='Yellow'" onblur="this.style.backgroundColor='White'" placeholder="Click">
+
+</div>
+
+<!-- CHAPTER 49 -->
+
+<div id="div5">
+   <fieldset> 
+       
+    <form onsubmit="CheckAddress('inp4')">
+    
+    <!-- OR <form onsubmit="CheckAddress('inp4')">   -->
+
+        Email:
+        <input type="text" id="inp4" onfocus="this.style.backgroundColor='LightGreen'" onblur="this.style.backgroundColor='White'">
+        <input type="submit" value="Submit" >
+    </form>
+
+    </fieldset> 
+    <script>
+     function CheckAddress(inp4)
+//OR function CheckAddress()
+    {
+        if(document.getElementById('inp4').value === "")
+        {
+            alert("Enter Email Address")
+        }
+        else
+        {
+            alert("Email Received: "+document.getElementById('inp4').value)
+        }
+
+    }
+    </script>
+
+</div>
+
+<!-- CHAPTER 50 -->
+
+<div id="div6">
+
+<form>
+    ZIP:<br>
+    <input type="text" id="zip"><br>
+    <button onclick="fillCity();">To Get City Name</button><br>
+    
+    City:<br>
+    <input type="text" id="city"><br>
+    <button onclick="fillnumber();">To Get City Code</button><br>
+    Clear: <br>
+    <input type="button" onclick="clear1()" value="Clear">
+</form>
+<script>
+    
+    function fillCity() 
+    {
+     var cityName;
+     var zipEntered1 = document.getElementById("zip").value;
+     
+     switch (zipEntered1) 
+     {
+        case "60608" :
+        cityName = "Chicago";
+        break;
+     
+        case "68114" :
+        cityName = "Omaha";
+        break;
+     
+        case "53212" :
+        cityName = "Milwaukee";
+     }
+     
+     document.getElementById("city").value = cityName;
+     document.getElementById("zip").value = "";
+     }
+
+     function fillnumber() 
+    {
+     var cityEntered = document.getElementById("city").value;
+     var zip;
+     
+     switch (cityEntered) 
+     {
+        case "Chicago" :
+        zip = "60608";
+        break;
+     
+        case "Omaha" :
+        zip = "68114";
+        break;
+     
+        case "Milwaukee" :
+        zip = "53212";
+        break;
+     }
+     
+     document.getElementById("zip").value = zip;
+     document.getElementById("city").value = "";
+     }
+     function clear1()
+     {
+        var a = "";
+        document.getElementById("zip").value =a;
+        document.getElementById("city").value =a;
+    }
+    
+</script>
+</div>
+
+<!-- CHAPTER 51 -->
+
+<div id="div7">
+
+        <p id="slowLoris">Slow lorises are a group of several species of strepsirrhine primates which make up the genus.
+                <a href="javascript:void(0);" onClick="expand();"><em>Click for more.</em></a><br>
+                <a href="javascript:void(0);" onClick="listofLoris();"><em>Click to Get List</em></a>
+        </p>  
+
+        <script>
+        
+        function expand()
+        {
+            var a = "Slow lorises are a group of several species of trepsirrhine primates which make up the genus Nycticebus. They have a round head, narrow snout, large eyes, and a variety of distinctive coloration patterns that are species-dependent. The hands and feet of slow lorises have several adaptations that give them a pincer-like grip and enable them to grasp branches for long periods of time. Slow lorises have a toxic bite, a rare trait among mammals."
+            document.getElementById("slowLoris").innerHTML = a;
+                       
+        }
+        function listofLoris() 
+        {
+            var abc = "<ol><li>Slow loris</li><li>Fast loris</li><li>Just-right loris</li></ol><br>";
+            document.getElementById("slowLoris").innerHTML = abc;
+        }
+        </script>
+</div>
+
+<!-- CHAPTER 52 -->
+
+<div id="div8">
+
+    <img src="../../../PICS/11217674_807993539296552_8714673860925719025_n.jpg" alt="" id="img5" >
+<center><button onclick="invisible()">Click to Hide</button></center>   
+<center><button onclick="display1()">Click to Display</button></center>
+    <style>
+    .hide
+    {
+        display: none;
+    }
+    .display
+    {
+        display: block;
+    }
+    </style>
+    
+    <script>
+    function invisible()
+    {
+        document.getElementById('img5').className = "hide"
+    }
+    function display1()
+    {
+        document.getElementById('img5').className = "display";
+    }
+    </script>
+
+    <p id="p2" class="pcolor">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet esse placeat totam adipisci tenetur sit dicta iste ea delectus porro eum reprehenderit, repudiandae nulla numquam magnam minima! Ipsa, fugiat esse.</p>
+
+    <button onclick="size1()">Click to Enlarge(Not Working)</button>
+
+    <style>
+    .pcolor 
+    {
+        color: rgb(133, 248, 56);
+    }
+    .bigsize1
+    {
+       font-size: 2.5em;
+    }
+    </style>
+
+    <script>
+    function size1()
+        {
+            documeng.getElementById('p2').className += " bigsize1";
+        }
+
+    </script>
+
+</div>
+
+<!-- CHAPTER 53 -->
+
+<div id="div9">
+    <p>Mouse Over Image</p>
+    <img src="../../CLASS WORK/unique.jpg" alt="" id="img6" onmouseover="swap()" onmouseout="returnpic()">
+
+    <script>
+    function swap()
+    {
+        document.getElementById('img6').src = '../../CLASS WORK/Wolve2.jpg'
+    }
+    function returnpic()
+    {
+        document.getElementById('img6').src = '../../CLASS WORK/unique.jpg'
+    }
+    </script>
+<p>Using Default fucntion to swap images</p>
+
+<img src="../../CLASS WORK/Wolve3.jpg" id="img7" onMouseover="swapPic('img7','../../CLASS WORK/unique.jpg')">
+
+<script>
+    function swapPic(id,newPic)
+    {
+        document.getElementById(id).src = newPic;
+    }
+
+
+</script>
+</div>
+
+<!-- CHAPTER 54 -->
+
+
+
+</body>
+</html>
